@@ -1,0 +1,93 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+::selection{
+    background-color: white;
+    color:var(--main-color) ;
+}
+:root{
+--main-color:#006400;
+}
+body{
+background-image: url(photo2.jpg); 
+background-position:center;
+background-size:130%;
+}
+.menu-par {
+    background:var(--main-color);
+    text-align: center;
+    text-transform: capitalize;
+}
+.menu-par ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+} 
+.menu-par ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-par ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active , 
+.menu-par ul li:hover{ 
+    background: #2bab0d;
+    border-radius: 5px;
+}
+.menu-par .fas {
+margin-right: 7px;
+    
+}
+.menu-par .fa {
+    margin-left:30px;
+        
+    }
+.sub-menu-par-1{
+    display: none;
+}
+.menu-par ul li:hover .sub-menu-par-1{
+    display: block;
+    position: absolute;
+    background:var(--main-color) ;
+    margin-top: 15px;
+    margin-left:-15px; 
+}
+.menu-par ul li:hover .sub-menu-par-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-par ul li:hover .sub-menu-par-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    overflow: hidden;
+}
+.menu-par ul li:hover .sub-menu-par-1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu-par ul li:hover .sub-menu-par-1 ul li a:hover{
+    color: #b2ff00;
+}
+.sub-menu-par-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-par-2 {
+    position:absolute;
+    display: block;
+     margin-top: -40px;
+     margin-left: 140px;
+     background-color: var(--main-color);
+}
+
+
